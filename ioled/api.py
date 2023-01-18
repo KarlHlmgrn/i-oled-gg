@@ -99,7 +99,7 @@ class GGDevice:
             ioled.error.AlreadyAThreadRunning: Raised if there already is a gif running
         """
         if isinstance(image, Image.Image):
-            if not image.is_animated:
+            if not getattr(image, "is_animated", False):
                 image = self.__stretch_resize_image(image, stretch)
                 image = self.__convert_img_to_bw(image, dither)
                 self.__send_image_to_device(image)
