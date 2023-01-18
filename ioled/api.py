@@ -146,7 +146,7 @@ class GGDevice:
         """
         if self.thread != None:
             raise AlreadyAThreadRunning
-        assert box[0] >= 0 and box[0] < 40 and box[1] >= 0 and box[1] < 128
+        assert box[1] >= 0 and box[1] < 40 and box[0] >= 0 and box[0] < 128
 
         image = self.__convert_img_to_bw(image, dither)
         self.current_image.paste(image, box)
