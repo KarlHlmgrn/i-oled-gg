@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="i-oled-gg",
-    version="1.0",
+    version="1.0.1",
     author="KarlHlmgrn",
     author_email="karlhlmgrn.github@gmail.com",
     description="Simple library to send images or GIFs to a SteelSeries keyboard OLED screen",
